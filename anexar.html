@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Anexar arquivos</title>
+    <link rel="stylesheet" type="text/css" href="feed.css" />
+    
+   
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+          
+          <!-- Link para a fonte "Cinzel Decorative" do Google Fonts -->
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap">
+      <body>
+      <div class="navigation">
+         
+         
+      
+          <ul>
+
+            <li class="list active">
+              <a href="feedusuario.php">
+             <span class="icon">
+              <ion-icon name="arrow-undo-outline"></ion-icon>
+             </span>
+             <span class="text">Voltar</span>
+
+
+              <li class="list active">
+                <a href="index.html">
+               <span class="icon">
+                  <ion-icon name="book"></ion-icon>
+               </span>
+               <span class="text">Nossa Hisória</span>
+                              
+                <li class="list">
+                   <a href="feedusuario.html">
+                    <span class="icon">
+                      <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                         <span class="text">Início</span>
+      
+                     <li class="list">
+                    <a href="anexar.html">
+                         <span class="icon">
+                         <ion-icon name="duplicate-outline"></ion-icon>
+                         </span>
+                 <span class="text">Novo Post</span>
+      
+                     <li class="list">
+                     <a href="paginaloginus.html">
+                   <span class="icon">
+                      <ion-icon name="person-outline"></ion-icon>
+                   </span>
+                    <span class="text">Usuário</span>
+                  </a>
+              </li>
+              </a>
+              <div class="indicador"></div>
+          </ul>
+      </div>
+      <div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+    <center>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    <h1>Anexando Arquivos</h1>
+    <form action="anexarbd.php" method="post" enctype="multipart/form-data">  
+        <label>Nome:</label><br>
+        <input type="text" name="txtnome"><br>
+        <label>Descrição:</label><br>
+        <textarea name="txtdescricao" rows="3"></textarea><br>
+		<label>Cole aqui seu link do Whatsapp:</label><br>
+        <input type="url" name="txtlink" rows="3"></input><br>
+        <label>Arquivo:</label><br>
+        
+        <input type="file" name="anexo">
+        <br><br>
+        <input type="submit" value="Enviar"><br><br>
+        <input type="reset" value="Limpar"> <br> <br>
+        <a href='listagem.php'>L I S T A R     
+    </form> 
+</center>
+</body>
+</html>
